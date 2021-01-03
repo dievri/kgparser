@@ -39,22 +39,18 @@ jobs:
           mvn install -DskipTests -Dmaven.javadoc.skip --no-transfer-progress
           rm -rf kefir
 
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v1
-        with: 
-          languages: java
-          queries: security-and-quality
-
       - name: Build kgparser project
         run: mvn package -Dmaven.javadoc.skip --no-transfer-progress
 
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v1
-
-      - name: Notify Telegram
-        uses: yanzay/notify-telegram@v0.1.0
-        if: always()
-        with:
-          chat: ${{ secrets.TGBOT_CHAT }}
-          token: ${{ secrets.TGBOT_TOKEN }}
-          status: ${{ job.status }}
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      # - name: Notify Telegram
+      #   uses: yanzay/notify-telegram@v0.1.0
+      #   if: always()
+      #   with:
+      #     chat: ${{ secrets.TGBOT_CHAT }}
+      #     token: ${{ secrets.TGBOT_TOKEN }}
+      #     status: ${{ job.status }}
