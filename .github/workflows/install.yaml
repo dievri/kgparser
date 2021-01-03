@@ -49,10 +49,3 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 #       run sonar maven plugin:
         run: mvn -B verify -Dmaven.javadoc.skip --no-transfer-progress sonar:sonar -Dsonar.projectKey=dievri_kgparser -Dsonar.organization=dievri -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
-      # - name: Notify Telegram
-      #   uses: yanzay/notify-telegram@v0.1.0
-      #   if: always()
-      #   with:
-      #     chat: ${{ secrets.TGBOT_CHAT }}
-      #     token: ${{ secrets.TGBOT_TOKEN }}
-      #     status: ${{ job.status }}
