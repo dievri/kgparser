@@ -41,7 +41,7 @@ jobs:
 
       # - name: Build kgparser project
       #   run: mvn package -Dmaven.javadoc.skip --no-transfer-progress
-
+ 
       - name: Analyze with SonarCloud
         #       set environment variables:
         env:
