@@ -9,4 +9,4 @@ jobs:
     steps:
       - run: mysql --version
       - run: sudo systemctl start mysql
-      - run: sudo mysql -e "create database actions;"
+      - run: sudo mysql -u root -p -e "create database actions;"
