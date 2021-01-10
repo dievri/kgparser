@@ -7,6 +7,9 @@ jobs:
     name: Build KG Parser
     runs-on: ubuntu-latest
     steps:
-      - run: mysql --version
-      - run: sudo mysqld_safe --skip-grant-tables
-      - run: sudo mysql -u root -p -e "create database actions;"
+      - run: |
+          mysql --version
+          mkdir -p /var/run/mysqld
+          chown mysql:mysql /var/run/mysqld
+          sudo mysqld_safe --skip-grant-tables
+          sudo mysql -u root -p -e "create database actions;"
