@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: mysql --version
-      - run: systemct start mysql
+      - run: systemctl start mysql
       - run: sudo mysql -e "create database actions;"
