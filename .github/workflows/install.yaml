@@ -8,3 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: mysql --version
+      - run: mysql -e "create database actions;"
