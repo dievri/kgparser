@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: |
           mysql --version
-          mkdir -p /var/run/mysqld
-          chown mysql:mysql /var/run/mysqld
+          sudo mkdir -p /var/run/mysqld
+          sudo chown mysql:mysql /var/run/mysqld
           sudo mysqld_safe --skip-grant-tables
           sudo mysql -u root -p -e "create database actions;"
