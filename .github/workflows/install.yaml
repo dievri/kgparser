@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: mysql --version
-      - run: sudo systemctl start mysql
+      - run: sudo mysqld_safe --skip-grant-tables
       - run: sudo mysql -u root -p -e "create database actions;"
