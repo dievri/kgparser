@@ -10,5 +10,5 @@ jobs:
       - run: mysql --version
       - run: sudo systemctl start mysql
       - run: sudo mysql -uroot -proot -e "create database actions;"
-      - run: sudo mysqldump -uroot -proot > mysql_dump.sql
+      - run: sudo mysqldump -uroot -proot actions > mysql_dump.sql
       - run: ls
