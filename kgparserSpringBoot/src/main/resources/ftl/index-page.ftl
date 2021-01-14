@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Статистика по клавогонщикам</title>
-    <link rel="stylesheet" type="text/css" href="./css/stats.css">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+    <#include "./styles.ftl">
 </head>
 <body>
 <#include "./header.ftl">
@@ -19,6 +18,7 @@
         <ul>
             <li><a href="${examplePlayerGetSummaryUrl}">${examplePlayerGetSummaryUrl}</a></li>
             <li><a href="${examplePlayerGetIndexDataUrl}">${examplePlayerGetIndexDataUrl}</a></li>
+            <li><a href="${examplePlayerGetStatsOverviewUrl}">${examplePlayerGetStatsOverviewUrl}</a></li>
         </ul>
     </div>
 
@@ -98,7 +98,7 @@
         <h2>Действующие игроки по рангам</h2>
 
         <div id="playersByRank-switcher-wrapper" class="paging left">
-            <span id="playersByRank-switcher-container"></span>&nbsp;&nbsp;&nbsp;<a href="./${links.playersByRank}">Страница с выбором диапазона</a>
+            <span id="playersByRank-switcher-container"></span>&nbsp;&nbsp;&nbsp;<a href="${links.playersByRank}">Страница с выбором диапазона</a>
         </div>
 
         <div id="playersByRank-single-chart-wrapper" class="flexWrap">
@@ -207,13 +207,22 @@
                 <td class="right">${top1PlayerByVocabulariesCount.vocabulariesCount}</td>
                 <td><a href="./${links.topByVocabulariesCount}">Топ</a></td>
             </tr>
+
+            <#-- hardcoded record -->
+            <#-- see https://klavogonki.ru/forum/software/59/page6/#post116 -->
+            <tr>
+                <td>Наибольшее число рейтингового опыта за месяц</td>
+                <@ptd.playerTd player=top1PlayerByRatingExperienceInOneMonth/>
+                <td class="right">334117</td>
+                <td><a href="https://klavogonki.ru/top/rating/archive-202012">Ссылка</a></td>
+            </tr>
         </table>
     </div>
 </main>
 
 <!-- see https://www.chartjs.org/docs/latest/getting-started/installation.html -->
 <script src="${links.chartJs}" integrity="${links.chartJsIntegrity}" crossorigin="anonymous"></script>
-<script src="./${links.playersByRankChartJs}"></script>
+<script src="${links.playersByRankChartJs}"></script>
 <script>
     window.addEventListener('load', function () {
         const playersByRankWithAtLeast1Race = ${playersByRankWithAtLeast1Race};

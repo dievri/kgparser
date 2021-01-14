@@ -4,36 +4,84 @@
     <meta charset="UTF-8">
     <title>Топ по рекорду в &laquo;Обычном&raquo;</title>
     <link rel="stylesheet" type="text/css" href="./css/stats.css">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico"/>
 </head>
 <body>
 <header>
     <table> 
         <tr>
-            <td>
+            <td class="header-left">
                 <a href="./stats.html">На главную</a>
-                | <a href="https://github.com/dmitry-weirdo/kgparser/">Kgparser on GitHub</a>
-                | <a href="https://klavogonki.ru/forum/software/59/">Тема на форуме</a>
+                | <a href="https://github.com/dmitry-weirdo/kgparser/">Kgparser&nbsp;on&nbsp;GitHub</a>
+                | <a href="https://klavogonki.ru/forum/software/59/">Тема&nbsp;на&nbsp;форуме</a>
                 | By <a href="https://klavogonki.ru/u/#/242585/">nosferatum</a>
-                <br/>
-                <a href="./stat-top-by-total-races.html">Топ по общему пробегу</a>
+                <div class="header-vertical-space"></div>
+                <a href="./stat-top-by-total-races.html">Топ&nbsp;по&nbsp;общему&nbsp;пробегу</a>
                 | <a href="./stat-top-by-best-speed-page-1.html">Топ по рекорду в &laquo;Обычном&raquo;</a>
-                | <a href="./stat-top-by-best-speed.html">Топ-500 в &laquo;Обычном&raquo;</a> 
-                | <a href="./stat-top-by-rating-level.html">Топ по уровню</a>
-                | <a href="./stat-top-by-friends-count.html">Топ по числу друзей</a>
-                | <a href="./stat-top-by-achievements-count.html">Топ по числу достижений</a>
-                | <a href="./stat-top-by-vocabularies-count.html">Топ по числу используемых словарей</a>
-                | <a href="./stat-top-by-cars-count.html">Топ по числу машин в гараже</a>
-                | <a href="./stat-players-by-rank.html">Игроки по рангам</a>
+                | <a href="./stat-top-by-best-speed.html">Топ-500&nbsp;в&nbsp;&laquo;Обычном&raquo;</a> 
+                | <a href="./stat-top-by-rating-level.html">Топ&nbsp;по&nbsp;уровню</a>
+                | <a href="./stat-top-by-friends-count.html">Топ&nbsp;по&nbsp;числу&nbsp;друзей</a>
+                | <a href="./stat-top-by-achievements-count.html">Топ&nbsp;по&nbsp;числу&nbsp;достижений</a>
+                <div class="header-vertical-space"></div>
+                <a href="./stat-top-by-vocabularies-count.html">Топ&nbsp;по&nbsp;числу&nbsp;используемых&nbsp;словарей</a>
+                | <a href="./stat-top-by-cars-count.html">Топ&nbsp;по&nbsp;числу&nbsp;машин&nbsp;в&nbsp;гараже</a>
+                | <a href="./stat-players-by-rank.html">Игроки&nbsp;по&nbsp;рангам</a>
+                <div class="header-vertical-space"></div>
+                <a href="././voc-normal-top-by-best-speed-page-1.html" class="normal">Обычный</a>
+                | <a href="././voc-abra-top-by-best-speed-page-1.html" class="abra">Абракадабра</a>
+                | <a href="././voc-referats-top-by-best-speed-page-1.html" class="referats">Яндекс.Рефераты</a>
+                | <a href="././voc-noerror-top-by-best-speed-page-1.html" class="noerror">Безошибочный</a>
+                | <a href="././voc-marathon-top-by-best-speed-page-1.html" class="marathon">Марафон</a>
+                | <a href="././voc-chars-top-by-best-speed-page-1.html" class="chars">Буквы</a>
+                | <a href="././voc-digits-top-by-best-speed-page-1.html" class="digits">Цифры</a>
+                | <a href="././voc-sprint-top-by-best-speed-page-1.html" class="sprint">Спринт</a>
+                <div class="header-vertical-space"></div>
+                <a href="././voc-5539-top-by-best-speed-page-1.html">Обычный&nbsp;in&nbsp;English</a>
+                | <a href="././voc-6018-top-by-best-speed-page-1.html">Мини-марафон,&nbsp;800&nbsp;знаков</a>
+                | <a href="././voc-1789-top-by-best-speed-page-1.html">Короткие&nbsp;тексты</a>
+                | <a href="././voc-192-top-by-best-speed-page-1.html">Частотный&nbsp;словарь</a>
+                | <a href="././voc-25856-top-by-best-speed-page-1.html">Соточка</a>
+                | <a href="././voc-62238-top-by-best-speed-page-1.html">Цифросоточка</a>
+                | <a href="././voc-226-top-by-best-speed-page-1.html">Тренируем&nbsp;указательные</a>
+                | <a href="././voc-8223-top-by-best-speed-page-1.html">Безымянные</a>
+                | <a href="././voc-3714-top-by-best-speed-page-1.html">Мизинцы+</a>
+                <div class="header-vertical-space"></div>
+                <a href="./2020-12-09/stats.html">Статистика&nbsp;от&nbsp;09.12.2020</a>
             </td>
-            <td class="header-right">
+            <td class="header-right" style="width: 300px;">
+                <form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml" style="padding: 5px 0 0 0; width: 350px;">
+                    <img src="./img/iomoney_logo_white.png" width="100" height="22" alt="ЮMoney"/>
+                    <div class="header-vertical-space"></div>
+                    <input type="hidden" name="receiver" value="4100116361083369">
+                    <input type="hidden" name="formcomment" value="Добровольный донат за Клавостатистику (1)">
+                    <input type="hidden" name="short-dest" value="Добровольный донат за Клавостатистику (2)">
+                    <input type="hidden" name="label" value="$order_id">
+                    <input type="hidden" name="quickpay-form" value="donate">
+                    <input type="hidden" name="targets" value="Донат хорошим людям за Клавостат!">
+                    <input type="text" name="sum" value="200" data-type="number" required pattern="[0-9]+">&nbsp;руб.
+                    <div class="header-vertical-space"></div>
+                    <input type="text" name="comment" style="width: 220px;" value="Донат за Клавостат :)" maxlength="200">
+                    <input type="hidden" name="need-fio" value="false">
+                    <input type="hidden" name="need-email" value="false">
+                    <input type="hidden" name="need-phone" value="false">
+                    <input type="hidden" name="need-address" value="false">
+                    <div class="header-vertical-space"></div>
+                    <label><input type="radio" name="paymentType" value="PC">ЮMoney</label>
+                    <label><input type="radio" name="paymentType" value="AC" checked>Картой</label>
+                    <input type="submit" value="Перевести">
+                </form>
+            </td>
+            <td class="header-right" style="width: 100px;">
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="WZ2BM3QJYGQTW"/>
-                    <input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" border="0"
+                    <input type="image" src="./img/paypal-logo-small.webp" border="0"
                            name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"/>
                     <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1"/>
                 </form>
-            </td>
+                <div class="header-vertical-space"></div>
+                <div class="header-vertical-space"></div>
+                Или на карту Тинькофф&nbsp;&mdash; 5536&nbsp;9139&nbsp;2010&nbsp;2668
+            <td>
         </tr>
     </table>
 </header>
@@ -41,7 +89,7 @@
     <div class="section">
         <h2>
             Топ по лучшей скорости в &laquo;Обычном&raquo;
-            <a class="excel" href="./xlsx/stat-top-by-best-speed-all-pages.zip"><img src="img/excel.png" class="excel" alt="Скачать Excel" title="Скачать Excel"/>Скачать Excel (все на одной странице)</a>
+            <a class="excel" href="./xlsx/stat-top-by-best-speed-all-pages.zip"><img src="./img/excel.png" class="excel" alt="Скачать Excel" title="Скачать Excel"/>Скачать Excel (все на одной странице)</a>
         </h2>
         Учтены игроки с минимальным общим пробегом: 1000
     </div>
@@ -71,32 +119,185 @@
 
 
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2292–2305</td>
                     <td class="maniac">
-                        <span class="login">Leshiy239</span>
-                        <a href="https://klavogonki.ru/u/#/202351/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        <span class="login">DayDream</span>
+                        <a href="https://klavogonki.ru/u/#/156591/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">523</td> 
+                    <td class="right">1737</td>
+                    <td>2009-09-22 22:15:04</td>
+                    <td class="right">12</td>
+                    <td class="right">13</td>
+                    <td class="right">3</td>
+                    <td class="right">0</td>
+                    <td class="right">1</td>
+                </tr>
+                <tr>
+                    <td class="right">2292–2305</td>
+                    <td class="maniac">
+                        <span class="login">хламидомонада</span>
+                        <a href="https://klavogonki.ru/u/#/426907/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">523</td> 
+                    <td class="right">1227</td>
+                    <td>2015-10-26 15:14:09</td>
+                    <td class="right">14</td>
+                    <td class="right">7</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">2</td>
+                </tr>
+                <tr>
+                    <td class="right">2292–2305</td>
+                    <td class="maniac">
+                        <span class="login">wiy</span>
+                        <a href="https://klavogonki.ru/u/#/162702/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">523</td> 
+                    <td class="right">1135</td>
+                    <td>2009-11-05 15:06:07</td>
+                    <td class="right">17</td>
+                    <td class="right">7</td>
+                    <td class="right">3</td>
+                    <td class="right">50</td>
+                    <td class="right">2</td>
+                </tr>
+                <tr>
+                    <td class="right">2292–2305</td>
+                    <td class="maniac">
+                        <span class="login">Ascold</span>
+                        <a href="https://klavogonki.ru/u/#/63048/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">523</td> 
+                    <td class="right">1129</td>
+                    <td>2008-11-09 11:49:15</td>
+                    <td class="right">6</td>
+                    <td class="right">4</td>
+                    <td class="right">0</td>
+                    <td class="right">0</td>
+                    <td class="right">1</td>
+                </tr>
+                <tr>
+                    <td class="right">2292–2305</td>
+                    <td class="maniac">
+                        <span class="login">ise200017</span>
+                        <a href="https://klavogonki.ru/u/#/462416/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">523</td> 
+                    <td class="right">1077</td>
+                    <td>2016-10-03 21:54:26</td>
+                    <td class="right">21</td>
+                    <td class="right">10</td>
+                    <td class="right">1</td>
+                    <td class="right">5</td>
+                    <td class="right">1</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">РуссоТуристо</span>
+                        <a href="https://klavogonki.ru/u/#/449890/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
-                    <td class="right">25092</td>
+                    <td class="right">88769</td>
+                    <td>2016-05-19 17:15:38</td>
+                    <td class="right">493</td>
+                    <td class="right">45</td>
+                    <td class="right">22</td>
+                    <td class="right">49</td>
+                    <td class="right">4</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">Sonick071</span>
+                        <a href="https://klavogonki.ru/u/#/156393/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">522</td> 
+                    <td class="right">79327</td>
+                    <td>2009-09-21 17:02:32</td>
+                    <td class="right">296</td>
+                    <td class="right">51</td>
+                    <td class="right">69</td>
+                    <td class="right">100</td>
+                    <td class="right">14</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">narciss0</span>
+                        <a href="https://klavogonki.ru/u/#/219745/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">522</td> 
+                    <td class="right">70293</td>
+                    <td>2010-09-15 08:11:19</td>
+                    <td class="right">89</td>
+                    <td class="right">52</td>
+                    <td class="right">32</td>
+                    <td class="right">89</td>
+                    <td class="right">1</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">ivanova1789</span>
+                        <a href="https://klavogonki.ru/u/#/95656/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">522</td> 
+                    <td class="right">26368</td>
+                    <td>2009-02-05 19:13:12</td>
+                    <td class="right">25</td>
+                    <td class="right">21</td>
+                    <td class="right">72</td>
+                    <td class="right">1</td>
+                    <td class="right">2</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">Leshiy239</span>
+                        <a href="https://klavogonki.ru/u/#/202351/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">522</td> 
+                    <td class="right">25108</td>
                     <td>2010-04-26 22:14:34</td>
-                    <td class="right">80</td>
+                    <td class="right">81</td>
                     <td class="right">42</td>
                     <td class="right">55</td>
                     <td class="right">37</td>
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Анализатор</span>
                         <a href="https://klavogonki.ru/u/#/103619/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
-                    <td class="right">15589</td>
+                    <td class="right">15590</td>
                     <td>2009-03-01 15:27:17</td>
                     <td class="right">33</td>
                     <td class="right">21</td>
@@ -105,11 +306,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Semandr</span>
                         <a href="https://klavogonki.ru/u/#/210233/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -122,15 +323,15 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">AsmCode</span>
                         <a href="https://klavogonki.ru/u/#/63332/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
-                    <td class="right">14187</td>
+                    <td class="right">14242</td>
                     <td>2008-11-10 00:27:44</td>
                     <td class="right">30</td>
                     <td class="right">13</td>
@@ -139,11 +340,11 @@
                     <td class="right">4</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Эвелин</span>
                         <a href="https://klavogonki.ru/u/#/440180/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -156,15 +357,15 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">bbenjamin2012</span>
                         <a href="https://klavogonki.ru/u/#/316102/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
-                    <td class="right">13116</td>
+                    <td class="right">13123</td>
                     <td>2012-09-22 23:21:35</td>
                     <td class="right">83</td>
                     <td class="right">14</td>
@@ -173,11 +374,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">NN531</span>
                         <a href="https://klavogonki.ru/u/#/19643/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -190,11 +391,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Eridan</span>
                         <a href="https://klavogonki.ru/u/#/149755/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -207,28 +408,62 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Cesarion</span>
                         <a href="https://klavogonki.ru/u/#/105928/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
-                    <td class="right">10890</td>
+                    <td class="right">10922</td>
                     <td>2009-03-07 22:10:48</td>
-                    <td class="right">12</td>
+                    <td class="right">14</td>
                     <td class="right">27</td>
                     <td class="right">4</td>
                     <td class="right">3</td>
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">coffeek</span>
+                        <a href="https://klavogonki.ru/u/#/402215/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">522</td> 
+                    <td class="right">10453</td>
+                    <td>2015-02-16 04:59:16</td>
+                    <td class="right">78</td>
+                    <td class="right">21</td>
+                    <td class="right">6</td>
+                    <td class="right">24</td>
+                    <td class="right">3</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
+                    <td class="maniac">
+                        <span class="login">gangster333</span>
+                        <a href="https://klavogonki.ru/u/#/526985/" target="_blank" rel="noopener noreferrer">
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                        </a>
+                    </td>
+                    <td class="right">522</td> 
+                    <td class="right">8623</td>
+                    <td>2018-07-12 20:27:30</td>
+                    <td class="right">41</td>
+                    <td class="right">18</td>
+                    <td class="right">16</td>
+                    <td class="right">35</td>
+                    <td class="right">2</td>
+                </tr>
+                <tr>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Kl9ksa</span>
                         <a href="https://klavogonki.ru/u/#/372354/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -241,28 +476,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
-                    <td class="maniac">
-                        <span class="login">gangster333</span>
-                        <a href="https://klavogonki.ru/u/#/526985/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">522</td> 
-                    <td class="right">8460</td>
-                    <td>2018-07-12 20:27:30</td>
-                    <td class="right">41</td>
-                    <td class="right">18</td>
-                    <td class="right">17</td>
-                    <td class="right">35</td>
-                    <td class="right">2</td>
-                </tr>
-                <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Мой_Логин</span>
                         <a href="https://klavogonki.ru/u/#/225511/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -275,11 +493,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">BlaZe_RoX</span>
                         <a href="https://klavogonki.ru/u/#/218322/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -292,15 +510,15 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">EvaMalina2007</span>
                         <a href="https://klavogonki.ru/u/#/592945/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
-                    <td class="right">6355</td>
+                    <td class="right">6456</td>
                     <td>2020-04-17 19:42:26</td>
                     <td class="right">41</td>
                     <td class="right">4</td>
@@ -309,11 +527,11 @@
                     <td class="right">16</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">-MilkyWay-</span>
                         <a href="https://klavogonki.ru/u/#/475048/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -326,11 +544,11 @@
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Pro100sergo</span>
                         <a href="https://klavogonki.ru/u/#/588257/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -343,11 +561,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">sansanic</span>
                         <a href="https://klavogonki.ru/u/#/273337/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -360,11 +578,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">6a6Ka_B_KeDaX</span>
                         <a href="https://klavogonki.ru/u/#/350306/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -377,11 +595,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Barosha</span>
                         <a href="https://klavogonki.ru/u/#/183999/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -394,11 +612,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">sadrage</span>
                         <a href="https://klavogonki.ru/u/#/256414/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -411,11 +629,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">humblebee</span>
                         <a href="https://klavogonki.ru/u/#/477695/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -428,11 +646,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Pete</span>
                         <a href="https://klavogonki.ru/u/#/243924/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -445,11 +663,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">Nomadeagle</span>
                         <a href="https://klavogonki.ru/u/#/398166/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -462,11 +680,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">MadVes</span>
                         <a href="https://klavogonki.ru/u/#/289347/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -479,11 +697,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2297–2325</td>
+                    <td class="right">2306–2335</td>
                     <td class="maniac">
                         <span class="login">dmitriy_vas</span>
                         <a href="https://klavogonki.ru/u/#/477454/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">522</td> 
@@ -496,45 +714,45 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">приветГригорий</span>
                         <a href="https://klavogonki.ru/u/#/479200/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
-                    <td class="right">60561</td>
+                    <td class="right">60707</td>
                     <td>2017-02-14 01:05:43</td>
                     <td class="right">584</td>
                     <td class="right">36</td>
                     <td class="right">16</td>
-                    <td class="right">93</td>
+                    <td class="right">94</td>
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">stag_</span>
                         <a href="https://klavogonki.ru/u/#/387605/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
-                    <td class="right">52328</td>
+                    <td class="right">52629</td>
                     <td>2014-09-15 23:36:28</td>
-                    <td class="right">147</td>
+                    <td class="right">148</td>
                     <td class="right">43</td>
                     <td class="right">0</td>
                     <td class="right">9</td>
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Атата</span>
                         <a href="https://klavogonki.ru/u/#/319942/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -547,45 +765,45 @@
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Олександр1</span>
                         <a href="https://klavogonki.ru/u/#/501801/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
-                    <td class="right">16060</td>
+                    <td class="right">16346</td>
                     <td>2017-09-24 20:06:22</td>
-                    <td class="right">28</td>
+                    <td class="right">29</td>
                     <td class="right">4</td>
                     <td class="right">1</td>
                     <td class="right">9</td>
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">m9so88</span>
                         <a href="https://klavogonki.ru/u/#/262310/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
-                    <td class="right">11313</td>
+                    <td class="right">13214</td>
                     <td>2011-08-09 20:19:06</td>
-                    <td class="right">54</td>
-                    <td class="right">22</td>
+                    <td class="right">57</td>
+                    <td class="right">24</td>
                     <td class="right">27</td>
-                    <td class="right">63</td>
+                    <td class="right">73</td>
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">bebe</span>
                         <a href="https://klavogonki.ru/u/#/26980/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -598,15 +816,15 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Quinta</span>
                         <a href="https://klavogonki.ru/u/#/397302/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
-                    <td class="right">5870</td>
+                    <td class="right">5872</td>
                     <td>2014-12-19 19:46:43</td>
                     <td class="right">23</td>
                     <td class="right">9</td>
@@ -615,11 +833,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Rinoa</span>
                         <a href="https://klavogonki.ru/u/#/114746/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -632,11 +850,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Smoked</span>
                         <a href="https://klavogonki.ru/u/#/168705/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -649,11 +867,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">undewate</span>
                         <a href="https://klavogonki.ru/u/#/558857/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -666,11 +884,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Stoz</span>
                         <a href="https://klavogonki.ru/u/#/47417/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -683,11 +901,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">qRies</span>
                         <a href="https://klavogonki.ru/u/#/525718/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -700,11 +918,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Spyro</span>
                         <a href="https://klavogonki.ru/u/#/253680/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -717,11 +935,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">egor_neo</span>
                         <a href="https://klavogonki.ru/u/#/299201/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -734,11 +952,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Гамсик</span>
                         <a href="https://klavogonki.ru/u/#/2139/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -751,11 +969,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">TheTempest</span>
                         <a href="https://klavogonki.ru/u/#/322422/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -768,11 +986,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">LifeD</span>
                         <a href="https://klavogonki.ru/u/#/376965/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -785,11 +1003,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Mycelin</span>
                         <a href="https://klavogonki.ru/u/#/143328/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -802,11 +1020,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">ptashcka</span>
                         <a href="https://klavogonki.ru/u/#/128296/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -819,11 +1037,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Знаток</span>
                         <a href="https://klavogonki.ru/u/#/24825/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -836,11 +1054,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">sky2fly</span>
                         <a href="https://klavogonki.ru/u/#/236655/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -853,11 +1071,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">blackmetalist</span>
                         <a href="https://klavogonki.ru/u/#/209762/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -870,11 +1088,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2326–2348</td>
+                    <td class="right">2336–2358</td>
                     <td class="maniac">
                         <span class="login">Ivain</span>
                         <a href="https://klavogonki.ru/u/#/488803/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">521</td> 
@@ -887,28 +1105,28 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">droom</span>
                         <a href="https://klavogonki.ru/u/#/256107/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
-                    <td class="right">49904</td>
+                    <td class="right">50938</td>
                     <td>2011-06-06 16:27:23</td>
-                    <td class="right">229</td>
+                    <td class="right">232</td>
                     <td class="right">54</td>
                     <td class="right">5</td>
-                    <td class="right">96</td>
+                    <td class="right">98</td>
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">NDancer</span>
                         <a href="https://klavogonki.ru/u/#/469235/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -921,11 +1139,11 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">suenot</span>
                         <a href="https://klavogonki.ru/u/#/224114/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -938,11 +1156,11 @@
                     <td class="right">22</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">rewz</span>
                         <a href="https://klavogonki.ru/u/#/485508/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -955,11 +1173,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Ilya666</span>
                         <a href="https://klavogonki.ru/u/#/312278/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -972,11 +1190,11 @@
                     <td class="right">23</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">rouster</span>
                         <a href="https://klavogonki.ru/u/#/235645/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -989,11 +1207,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">vect</span>
                         <a href="https://klavogonki.ru/u/#/54297/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1006,15 +1224,15 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Festina_lente</span>
                         <a href="https://klavogonki.ru/u/#/214429/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
-                    <td class="right">12064</td>
+                    <td class="right">12075</td>
                     <td>2010-07-27 23:59:56</td>
                     <td class="right">33</td>
                     <td class="right">27</td>
@@ -1023,11 +1241,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Laplass</span>
                         <a href="https://klavogonki.ru/u/#/188723/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1040,11 +1258,11 @@
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Танюшка25</span>
                         <a href="https://klavogonki.ru/u/#/296877/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1057,11 +1275,11 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Oleg_R</span>
                         <a href="https://klavogonki.ru/u/#/138283/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1074,11 +1292,11 @@
                     <td class="right">13</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Varsag</span>
                         <a href="https://klavogonki.ru/u/#/241816/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1091,11 +1309,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Продается</span>
                         <a href="https://klavogonki.ru/u/#/590893/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1108,11 +1326,11 @@
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Гавриил</span>
                         <a href="https://klavogonki.ru/u/#/7468/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1125,11 +1343,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Бросай_курить</span>
                         <a href="https://klavogonki.ru/u/#/169893/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1142,11 +1360,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">supercat</span>
                         <a href="https://klavogonki.ru/u/#/161155/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1159,11 +1377,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">dimapetruh</span>
                         <a href="https://klavogonki.ru/u/#/446076/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1176,11 +1394,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">палковводецъ</span>
                         <a href="https://klavogonki.ru/u/#/285081/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1193,28 +1411,28 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">RSM84</span>
                         <a href="https://klavogonki.ru/u/#/529275/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
-                    <td class="right">1503</td>
+                    <td class="right">1574</td>
                     <td>2018-08-22 12:34:17</td>
-                    <td class="right">24</td>
+                    <td class="right">25</td>
                     <td class="right">9</td>
-                    <td class="right">1</td>
+                    <td class="right">2</td>
                     <td class="right">2</td>
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">greshnikk</span>
                         <a href="https://klavogonki.ru/u/#/158553/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1227,11 +1445,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">da_step</span>
                         <a href="https://klavogonki.ru/u/#/281272/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1244,11 +1462,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">ekamelev</span>
                         <a href="https://klavogonki.ru/u/#/123471/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1261,11 +1479,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Holodec</span>
                         <a href="https://klavogonki.ru/u/#/67420/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1278,11 +1496,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2349–2372</td>
+                    <td class="right">2359–2382</td>
                     <td class="maniac">
                         <span class="login">Анаконда</span>
                         <a href="https://klavogonki.ru/u/#/322939/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">520</td> 
@@ -1295,11 +1513,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">ASplayer9119</span>
                         <a href="https://klavogonki.ru/u/#/397953/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1312,11 +1530,11 @@
                     <td class="right">16</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Locust</span>
                         <a href="https://klavogonki.ru/u/#/319389/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1329,11 +1547,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">_VR_</span>
                         <a href="https://klavogonki.ru/u/#/389432/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1346,11 +1564,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">fractal</span>
                         <a href="https://klavogonki.ru/u/#/301/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1363,11 +1581,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Sky-Ice</span>
                         <a href="https://klavogonki.ru/u/#/536855/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1380,11 +1598,11 @@
                     <td class="right">4</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">yarnsstyle</span>
                         <a href="https://klavogonki.ru/u/#/312619/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1397,11 +1615,11 @@
                     <td class="right">5</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Waleria</span>
                         <a href="https://klavogonki.ru/u/#/155693/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1414,28 +1632,11 @@
                     <td class="right">3</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
-                    <td class="maniac">
-                        <span class="login">coffeek</span>
-                        <a href="https://klavogonki.ru/u/#/402215/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">519</td> 
-                    <td class="right">9800</td>
-                    <td>2015-02-16 04:59:16</td>
-                    <td class="right">74</td>
-                    <td class="right">21</td>
-                    <td class="right">6</td>
-                    <td class="right">23</td>
-                    <td class="right">3</td>
-                </tr>
-                <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">d3us</span>
                         <a href="https://klavogonki.ru/u/#/250588/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1448,11 +1649,11 @@
                     <td class="right">4</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Harra</span>
                         <a href="https://klavogonki.ru/u/#/125486/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1465,11 +1666,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Asselen</span>
                         <a href="https://klavogonki.ru/u/#/137323/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1482,11 +1683,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Старовер</span>
                         <a href="https://klavogonki.ru/u/#/77913/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1499,11 +1700,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">6apcuk</span>
                         <a href="https://klavogonki.ru/u/#/150500/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1516,11 +1717,11 @@
                     <td class="right">2</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Lizardsking</span>
                         <a href="https://klavogonki.ru/u/#/332091/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1533,11 +1734,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">cmd</span>
                         <a href="https://klavogonki.ru/u/#/12609/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1550,11 +1751,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">Vlesman</span>
                         <a href="https://klavogonki.ru/u/#/156115/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1567,11 +1768,11 @@
                     <td class="right">8</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">DizziTT</span>
                         <a href="https://klavogonki.ru/u/#/354732/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1584,11 +1785,11 @@
                     <td class="right">4</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">xymjak</span>
                         <a href="https://klavogonki.ru/u/#/274789/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1601,11 +1802,11 @@
                     <td class="right">1</td>
                 </tr>
                 <tr>
-                    <td class="right">2373–2392</td>
+                    <td class="right">2383–2401</td>
                     <td class="maniac">
                         <span class="login">JustBlue</span>
                         <a href="https://klavogonki.ru/u/#/557021/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
+                            <img src="./img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
                         </a>
                     </td>
                     <td class="right">519</td> 
@@ -1615,159 +1816,6 @@
                     <td class="right">1</td>
                     <td class="right">0</td>
                     <td class="right">35</td>
-                    <td class="right">1</td>
-                </tr>
-                <tr>
-                    <td class="right">2373–2392</td>
-                    <td class="maniac">
-                        <span class="login">medlennyy_pzdc</span>
-                        <a href="https://klavogonki.ru/u/#/356436/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">519</td> 
-                    <td class="right">1022</td>
-                    <td>2013-09-01 22:10:33</td>
-                    <td class="right">14</td>
-                    <td class="right">6</td>
-                    <td class="right">2</td>
-                    <td class="right">5</td>
-                    <td class="right">1</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">Toshus</span>
-                        <a href="https://klavogonki.ru/u/#/224151/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">36891</td>
-                    <td>2010-10-16 22:49:49</td>
-                    <td class="right">49</td>
-                    <td class="right">14</td>
-                    <td class="right">5</td>
-                    <td class="right">30</td>
-                    <td class="right">2</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">Крип</span>
-                        <a href="https://klavogonki.ru/u/#/426320/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">36161</td>
-                    <td>2015-10-20 21:57:07</td>
-                    <td class="right">121</td>
-                    <td class="right">25</td>
-                    <td class="right">5</td>
-                    <td class="right">147</td>
-                    <td class="right">1</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">ruki_sadama</span>
-                        <a href="https://klavogonki.ru/u/#/379559/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">33527</td>
-                    <td>2014-05-08 13:48:39</td>
-                    <td class="right">45</td>
-                    <td class="right">11</td>
-                    <td class="right">1</td>
-                    <td class="right">16</td>
-                    <td class="right">3</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">salat79</span>
-                        <a href="https://klavogonki.ru/u/#/64021/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">30242</td>
-                    <td>2008-11-11 23:21:07</td>
-                    <td class="right">74</td>
-                    <td class="right">29</td>
-                    <td class="right">9</td>
-                    <td class="right">13</td>
-                    <td class="right">1</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">Elizar</span>
-                        <a href="https://klavogonki.ru/u/#/334110/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">26457</td>
-                    <td>2013-02-24 17:14:23</td>
-                    <td class="right">165</td>
-                    <td class="right">13</td>
-                    <td class="right">3</td>
-                    <td class="right">183</td>
-                    <td class="right">5</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">AlexSIBER</span>
-                        <a href="https://klavogonki.ru/u/#/311539/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">18996</td>
-                    <td>2012-08-13 08:01:31</td>
-                    <td class="right">107</td>
-                    <td class="right">17</td>
-                    <td class="right">38</td>
-                    <td class="right">182</td>
-                    <td class="right">7</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">1hab1</span>
-                        <a href="https://klavogonki.ru/u/#/113288/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">11112</td>
-                    <td>2009-03-27 16:26:44</td>
-                    <td class="right">19</td>
-                    <td class="right">14</td>
-                    <td class="right">8</td>
-                    <td class="right">3</td>
-                    <td class="right">2</td>
-                </tr>
-                <tr>
-                    <td class="right">2393–2415</td>
-                    <td class="maniac">
-                        <span class="login">C_W_A_L_K</span>
-                        <a href="https://klavogonki.ru/u/#/419724/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/info.png" alt="Профиль" title="Профиль" width="10" height="10"/>
-                        </a>
-                    </td>
-                    <td class="right">518</td> 
-                    <td class="right">9306</td>
-                    <td>2015-09-07 21:44:41</td>
-                    <td class="right">33</td>
-                    <td class="right">3</td>
-                    <td class="right">3</td>
-                    <td class="right">8</td>
                     <td class="right">1</td>
                 </tr>
         </table>
@@ -1792,7 +1840,7 @@
 
     function appendPaging() {
         const paging = new Paging({
-            totalPages: 163,
+            totalPages: 164,
             currentPage: 24,
             bindLinks: true,
 

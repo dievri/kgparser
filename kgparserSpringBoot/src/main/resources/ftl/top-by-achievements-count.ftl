@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Топ по числу достижений</title>
-    <link rel="stylesheet" type="text/css" href="./${links.statsCss}">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+    <#include "./styles.ftl">
 </head>
 <body>
 <#include "./header.ftl">
@@ -13,7 +12,7 @@
     <div class="section">
         <h2>
             Топ-${players?size} по числу достижений
-            <a class="excel" href="./${links.topByAchievementsCountZip}"><img src="img/excel.png" class="excel" alt="Скачать Excel" title="Скачать Excel"/>Скачать Excel (в архиве)</a>
+            <a class="excel" href="./${links.topByAchievementsCountZip}"><img src="${links.excelPng}" class="excel" alt="Скачать Excel" title="Скачать Excel"/>Скачать Excel (в архиве)</a>
         </h2>
     </div>
 

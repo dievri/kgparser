@@ -1,36 +1,51 @@
 package ru.klavogonki.kgparser.jsonParser.entity;
 
 import lombok.Data;
+import lombok.ToString;
+import org.hibernate.annotations.NaturalId;
 import ru.klavogonki.kgparser.Rank;
 import ru.klavogonki.kgparser.http.UrlConstructor;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
 @Table(name = "Player")
-public class PlayerEntity {
+public class PlayerEntity implements Serializable {
+
+    public static final int NOT_BLOCKED = 0;
 
     @Id
-    @GeneratedValue
+//    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pl_SEQ")
+    @SequenceGenerator(name = "pl_SEQ", sequenceName = "pl_SEQ", allocationSize = 1000)
     private Long dbId;
 
     private LocalDateTime importDate; // when PlayerDataDownloader has been executed
 
     private String getSummaryError; // we import all users, including non-existing
 
-    private String getIndexDataError; // we import all users, including non-existing and users with failed /get-indexData
+    private String getIndexDataError; // we import all users, including non-existing and users with failed /get-index-data
+
+    private String getStatsOverviewError; // we import all users, including non-existing and users with failed /get-stats-overview
 
     // fields from PlayerSummary
+    @NaturalId
     private Integer playerId; // KG user id
 
     private String login;
@@ -74,6 +89,11 @@ public class PlayerEntity {
     private Integer vocabulariesCount;
 
     private Integer carsCount;
+
+    @ToString.Exclude
+    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "player_id") // do not create a join table! // todo: it's hard for non-pk column, does not work easily. Investigate this
+    List<PlayerVocabularyStatsEntity> stats;
 
     @Transient
     public String getProfileLink() {
