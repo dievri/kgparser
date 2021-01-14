@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+				 version="2.5">
+
+	<context-param>
+		<description>Режим работы фабрики сервисов.</description>
+		<param-name>su.opencode.kefir.web.util.ServiceFactory.MODE</param-name>
+		<param-value>local</param-value>
+	</context-param>
+	<context-param>
+		<param-name>fileEncoding</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>charsetFilter</filter-name>
+		<filter-class>su.opencode.kefir.web.util.CharsetFilter</filter-class>
+		<init-param>
+			<param-name>requestEncoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>charsetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- competition entity -->
+	<servlet>
+		<servlet-name>competitionUpload</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.entity.CompetitionUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>competitionZipFileDownload</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.entity.CompetitionZipFileDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>competitionsList</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.entity.CompetitionsListServlet</servlet-class>
+	</servlet>
+
+	<!-- basic info -->
+	<servlet>
+		<servlet-name>competitionBasicInfoGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.model.basicInfo.CompetitionBasicInfoGetServlet</servlet-class>
+	</servlet>
+
+	<!-- round info -->
+	<servlet>
+		<servlet-name>roundInfoGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.model.round.RoundInfoGetServlet</servlet-class>
+	</servlet>
+
+	<!-- processing -->
+	<servlet>
+		<servlet-name>supermanOrderResultGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.model.supermanOrder.SupermanOrderResultGetServlet</servlet-class>
+	</servlet>
+
+	<!-- players results table -->
+	<servlet>
+		<servlet-name>playersResultsTableDataGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.processing.playersTable.PlayersResultsTableDataGetServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>playerResultsTableXlsGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.processing.playersTable.PlayerResultsTableXlsGetServlet</servlet-class>
+	</servlet>
+
+	<!-- highchart -->
+	<servlet>
+		<servlet-name>speedChartValuesGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.model.highchart.SpeedChartValuesGetServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>errorsCountChartValuesGet</servlet-name>
+		<servlet-class>ru.klavogonki.kgparser.servlet.model.highchart.ErrorsCountChartValuesGetServlet</servlet-class>
+	</servlet>
+
+
+	<!-- competition entity -->
+	<servlet-mapping>
+		<servlet-name>competitionUpload</servlet-name>
+		<url-pattern>/competitionUpload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>competitionZipFileDownload</servlet-name>
+		<url-pattern>/competitionZipFileDownload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>competitionsList</servlet-name>
+		<url-pattern>/competitionsList</url-pattern>
+	</servlet-mapping>
+
+	<!-- basic info -->
+	<servlet-mapping>
+		<servlet-name>competitionBasicInfoGet</servlet-name>
+		<url-pattern>/competitionBasicInfoGet</url-pattern>
+	</servlet-mapping>
+
+	<!-- round info -->
+	<servlet-mapping>
+		<servlet-name>roundInfoGet</servlet-name>
+		<url-pattern>/roundInfoGet</url-pattern>
+	</servlet-mapping>
+
+	<!-- processing -->
+	<servlet-mapping>
+		<servlet-name>supermanOrderResultGet</servlet-name>
+		<url-pattern>/supermanOrderResultGet</url-pattern>
+	</servlet-mapping>
+
+	<!-- players results table -->
+	<servlet-mapping>
+		<servlet-name>playersResultsTableDataGet</servlet-name>
+		<url-pattern>/playersResultsTableDataGet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>playerResultsTableXlsGet</servlet-name>
+		<url-pattern>/playerResultsTableXlsGet</url-pattern>
+	</servlet-mapping>
+
+	<!-- highchart -->
+	<servlet-mapping>
+		<servlet-name>speedChartValuesGet</servlet-name>
+		<url-pattern>/speedChartValuesGet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>errorsCountChartValuesGet</servlet-name>
+		<url-pattern>/errorsCountChartValuesGet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

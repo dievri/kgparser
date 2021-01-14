@@ -1,0 +1,88 @@
+body {
+	font-family: "Helvetica Neue",​Helvetica,​Arial,​sans-serif;
+	color: #444444;
+}
+
+h2 {
+	margin: 0 0 20px 0;
+	font-weight: normal;
+	color: #444444;
+}
+
+h3 {
+	margin: 20px 0 5px 0;
+	font-weight: normal;
+	color: #444444;
+}
+
+#wrapper {
+	padding: 10px;
+}
+
+a, a:visited {
+	color: #144E9D;
+}
+a:hover {
+	color: #BB2200;
+}
+
+a.toggle, a.toggle:hover {
+	font-size: 15px;;
+	text-decoration: none;
+	border-bottom: 1px dotted #144E9D;
+	cursor: pointer;
+	color: #144E9D;
+	margin-left: 20px;
+}
+
+td.right {
+	text-align: right;
+}
+
+table.competitionsList, table.results {
+	border-collapse: collapse;
+}
+table.competitionsList th, table.results th {
+	font-weight: normal;
+	color: #878069;
+	background-color: #F8F4E7;
+	border: 1px solid #DDDDDD;
+	padding: 5px;
+}
+table.competitionsList td {
+	padding: 5px;
+	border: 1px solid #DDDDDD;
+}
+table.results td {
+	padding: 0 5px;
+	border: 1px solid #DDDDDD;
+}
+
+table.competitionsList tr.odd, table.results tr.odd {
+	background-color: #F7F6EB;
+}
+table.competitionsList tr.even, table.results tr.even {
+}
+
+.bottomLinks {
+	padding: 10px;
+}
+.bottomLinksRow {
+	margin-bottom: 10px;
+}
+
+span.profile {
+	background-image: url('/img/profile2.png');
+	padding-left: 10px;
+}
+
+/* upload form */
+td.label { text-align: right; }
+td.field { }
+.required { color: red; }
+div.hint { color: gray; font-size: 90%; }
+div.buttonsContainer { text-align: right; }
+
+.disabled {
+	color: #C0C0C0;
+}
